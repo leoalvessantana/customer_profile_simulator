@@ -124,13 +124,13 @@ def prever_tef(df, model, scaler_robust_saida):
 kmeans = joblib.load('modelo_clusterizacao.pkl')
 
 # Carregar modelo e scaler para o cpr
-data = joblib.load('C:/Users/lasantan/Documents/PROJETO_CPR/analise_tef_imais_1/modelo_cpr.pkl')
+data = joblib.load('modelo_cpr.pkl')
 modelo = data['model']
 scaler_robust_saida = data['scaler']
 
 
 # Carregar modelo e scaler para o tef
-data1 = joblib.load('C:/Users/lasantan/Documents/PROJETO_CPR/analise_tef_imais_1/modelo_tef.pkl')
+data1 = joblib.load('modelo_tef.pkl')
 modelo1 = data['model']
 scaler_robust_saida1 = data1['scaler']
 
